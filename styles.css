@@ -1,0 +1,247 @@
+/* CSS BY Timothy Adams */
+
+/* IMPORTED FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
+
+/* CSS RESET */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* ROOT VARIABLES */
+:root {
+    --teal: #4CA7C0;
+    --purple: #484FB7;
+    --lavender: #6B8FE7;
+    --yellow: #E9BB57;
+    --pink: #D9526F;
+    --dark-gray: #1E1E1E;
+    --white: #ffffff;
+}
+
+/* GLOBAL STYLES (mobile first/small) */
+body {
+    max-width: 450px;
+    font-family: inter, arial, sans-serif;
+    background-color: var(--lavender);
+    margin: auto;
+}
+
+header, main, footer {
+    background-color: var(--purple);
+}
+
+header {
+    color: var(--white);
+    text-align: center;
+    padding: 35px;
+}
+
+h1 {
+    margin: 10px;
+    font-size: 3em;
+}
+
+h1, h2 {
+    font-family: Kavoon, Arial, sans-serif;
+}
+
+header p {
+    margin: 10px;
+    font-style: italic;
+}
+
+nav {
+    text-align: center;
+    background-color: var(--yellow);
+}
+
+nav h2 {
+    font-family: Inter, arial, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding-top: 15px;
+}
+
+ul {
+    padding-bottom: 30px;
+}
+
+li {
+    font-weight: bold;
+    color: var(--purple);
+    background-color: var(--white);
+    Padding: 20px;
+    margin: 10px 20px 0px 20px;
+}
+
+H2 {
+    padding: 15px 15px 0px 15px;
+    font-size: 2em;
+    color: var(--white);
+}
+
+H3 {
+    padding: 15px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--yellow);
+}
+
+section > article {
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 20px 0px;
+    width: 90%;
+    border-radius: 20px;
+    background-color: var(--white);
+}
+
+article > img {
+    margin: 0px 10px 15px 15px;
+}
+
+H4 {
+    font-size: 1.15em;
+    font-weight: bold;
+    margin: 0px 15px 15px 15px;
+    color: var(--purple);
+}
+
+article > p {
+    margin: 0px 10px 15px 15px;
+    font-size: 1.15em;
+    line-height: 1.15em;
+    color: var(--dark-gray);
+}
+
+main > section:nth-child(2) {
+    background-color: var(--pink);
+}
+
+section > div {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 0px 10px 10px 10px;
+}
+
+div > p {
+    padding: 30px 20px;
+    margin: 5px;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+div > p:nth-child(1) {
+    background-color: var(--teal);
+}
+
+div > p:nth-child(2) {
+    background-color: var(--lavender);
+}
+
+div > p:nth-child(3) {
+    background-color: var(--yellow);
+}
+
+div > p:nth-child(4) {
+    background-color: var(--white);
+}
+
+table {
+    margin: auto;
+    border: 2px solid var(--yellow);
+}
+
+th, td {
+    border: 2px solid var(--yellow);
+    padding: 20px;
+}
+
+th {
+    font-weight: bold;
+    background-color: var(--yellow);
+}
+
+td {
+    background-color: var(--white);
+    color: var(--dark-gray);
+}
+
+main > section:nth-child(4) {
+    background-color: var(--pink);
+    margin-top: 15px;
+    padding-bottom: 15px;
+    padding: 0px 15px;
+    color: var(--white);
+}
+
+main > section:nth-child(4) > h2 {
+    padding-bottom: 15px;
+}
+
+form {
+    padding: 15px;
+}
+
+button {
+    font-size: 1.5em;
+    font-weight: bold;
+    width: 100%;
+    padding: 25px 0px;
+    border-radius: 20px;
+    box-shadow: grey 2px 2px;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 30px;
+}
+
+footer > p, footer > a {
+    color: var(--white);
+    display: block;
+    margin: auto;
+}
+
